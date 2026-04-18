@@ -4,24 +4,10 @@
         entry="GulcosaGarminApp"
         id="a3b4c5d6-e7f8-1234-abcd-ef1234567890"
         launcherIcon="@Drawables.LauncherIcon"
-        minApiLevel="3.4.0"
         name="@Strings.AppName"
         type="watchApp"
-        version="1.0.0">
-
-        <!-- Permisos necesarios -->
-        <iq:permissions>
-            <iq:uses-permission id="Communications"/>
-            <iq:uses-permission id="Sensor"/>
-        </iq:permissions>
-
-        <!-- Idiomas soportados -->
-        <iq:languages>
-            <iq:language>spa</iq:language>
-            <iq:language>eng</iq:language>
-        </iq:languages>
-
-        <!-- Dispositivos compatibles - ampliar según necesidad -->
+        version="1.0.0"
+        minApiLevel="3.4.0">
         <iq:products>
             <iq:product id="fenix6"/>
             <iq:product id="fenix6pro"/>
@@ -42,5 +28,13 @@
             <iq:product id="fr955"/>
             <iq:product id="fr965"/>
         </iq:products>
+        <iq:permissions>
+            <iq:uses-permission id="Communications"/>
+            <iq:uses-permission id="Sensor"/>
+        </iq:permissions>
+        <iq:languages>
+            <iq:language>spa</iq:language>
+            <iq:language>eng</iq:language>
+        </iq:languages>
     </iq:application>
 </iq:manifest>
